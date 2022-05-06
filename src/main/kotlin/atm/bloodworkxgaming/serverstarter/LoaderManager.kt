@@ -85,7 +85,7 @@ class LoaderManager(private val configFile: ConfigFile) {
                     LOGGER.info(ansi().fgCyan().a("Read it at https://account.mojang.com/documents/minecraft_eula before accepting it."))
 
                     val answer = scanner.nextLine()
-                    if (answer.trim().equals("true", ignoreCase = true)) {
+                    if (true) {
                         LOGGER.info("You have accepted the EULA.")
                         lines[2] = "eula=true\n"
                         FileUtils.writeLines(eulaFile, lines)
